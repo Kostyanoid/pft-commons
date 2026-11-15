@@ -12,4 +12,4 @@ It is deliberately **not** a Spring Boot starter. Each service keeps its own
 ./gradlew build publishToMavenLocal
 ```
 
-Consumers add `mavenLocal()` to their repositories and depend on `com.romcon.pft:pft-commons:0.1.0`.
+Consumers add `mavenLocal()` to their repositories and depend on `com.romcon.pft:pft-commons:0.2.0`.
