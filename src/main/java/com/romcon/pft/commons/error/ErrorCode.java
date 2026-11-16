@@ -41,7 +41,13 @@ public enum ErrorCode {
     CATEGORY_ARCHIVED(409, "Category is archived"),
     IDEMPOTENCY_CONFLICT(409, "Idempotency key reused with a different request"),
     IMMUTABLE_FIELD(422, "Field cannot be changed"),
-    CROSS_USER_REFERENCE(422, "Referenced resource belongs to another user");
+    CROSS_USER_REFERENCE(422, "Referenced resource belongs to another user"),
+
+    // -------- Currency domain --------
+    RATE_PERIOD_TOO_LONG(400, "Requested period is too long"),
+    RATE_DATE_IN_FUTURE(400, "Requested date is in the future"),
+    CURRENCY_NOT_FOUND(404, "Currency not found"),
+    RATE_NOT_AVAILABLE(404, "Exchange rate is not available for this date");
 
     private static final String TYPE_PREFIX = "urn:pft:problem:";
 

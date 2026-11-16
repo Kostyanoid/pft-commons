@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.romcon.pft"
-version = "0.2.0"
+version = "0.2.1"
 description = "Shared error-code catalogue, API exceptions and constants for PFT services"
 
 java {
